@@ -1,0 +1,42 @@
+register SYS_CTRL {
+address 0x00
+"hello"
+bits 0:0; access RW; name CRC_EN; comments "CRC16 CCITT polynomial= X^16 + X^12 + X^5 + X^0; default intial value is 0xFFFF"   
+bits 1:1; access RW; name CRC_RES_INV; comments "" 
+bits 2:2; access RW; name RFU; comments ""   
+bits 3:3; access RW; name AUTO_SEL_RX; comments ""   
+bits 5:4; access RW; name TX_RATE; comments ""   
+bits 7:6; access RW; name TX_RATE; comments ""   
+}
+
+SYS_CTRL_CRC_EN                      0:0
+SYS_CTRL_CRC_EN_START                0
+SYS_CTRL_CRC_EN_SIZE                 1
+SYS_CTRL_CRC_RES_INV                 1:1
+SYS_CTRL_CRC_RES_INV_START           1
+SYS_CTRL_CRC_RES_INV_SIZE            1
+SYS_CTRL_RFU                         2:2
+SYS_CTRL_RFU_START                   2
+SYS_CTRL_RFU_SIZE                    1
+SYS_CTRL_AUTO_SEL_RX                 3:3
+SYS_CTRL_AUTO_SEL_RX_START           3
+SYS_CTRL_AUTO_SEL_RX_SIZE            1
+SYS_CTRL_RX_RATE                     5:4
+SYS_CTRL_RX_RATE_START               4
+SYS_CTRL_RX_RATE_SIZE                2
+SYS_CTRL_TX_RATE                     7:6
+SYS_CTRL_TX_RATE_START               6
+SYS_CTRL_TX_RATE_SIZE                2
+
+SYS_CTRL_REG                         7:0
+SYS_CTRL_REG_START                   0
+SYS_CTRL_REG_SIZE                    9
+
+SYS_CTRL_REG_ADDR                    6'h0
+SYS_CTRL_REG_DEFAULT                 8'h0         
+SYS_CTRL_CRC_EN_DEFAULT              1'h0 
+SYS_CTRL_CRC_RES_INV                 1'h0 
+SYS_CTRL_RFU                         1'h0 
+SYS_CTRL_AUTO_SEL_RX                 1'b0 
+SYS_CTRL_RX_RATE                     1'b0 
+SYS_CTRL_TX_RATE                     1'b0 

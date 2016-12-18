@@ -1,0 +1,8 @@
+SYS_CTRL {
+bits 0:0; access RW; name CRC_EN; comments "CRC16 CCITT polynomial= X^16 + X^12 + X^5 + X^0; default intial value is 0xFFFF"   
+bits 1:1; access RW; name CRC_RES_INV; comments "" 
+bits 2:2; access RW; name RFU; comments ""   
+bits 3:3; access RW; name AUTO_SEL_RX; comments ""   
+bits 5:4; access RW; name TX_RATE; comments ""   
+bits 7:6; access RW; name TX_RATE; comments ""   
+}
